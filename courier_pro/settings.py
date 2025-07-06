@@ -30,7 +30,16 @@ SECRET_KEY = os.getenv("PROJECT_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = [
+    'courier-management-system-backend-api-9bo8.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://courier-management-system-backend-api-9bo8.onrender.com',
+]
 
 
 # Application definition
