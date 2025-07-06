@@ -1,0 +1,39 @@
+PUT : http://127.0.0.1:8000/api/v1/orders/admin/assign/1/
+PATCH : http://127.0.0.1:8000/api/v1/orders/admin/assign/1/
+
+GET : http://127.0.0.1:8000/api/v1/orders/admin/orders/
+GET : http://127.0.0.1:8000/api/v1/orders/api/v1/
+GET : http://127.0.0.1:8000/api/v1/orders/delivery/orders/
+
+PUT : http://127.0.0.1:8000/api/v1/orders/delivery/status/1/
+PATCH : http://127.0.0.1:8000/api/v1/orders/delivery/status/1/
+
+POST : http://127.0.0.1:8000/api/v1/orders/payment/session/
+POST : http://127.0.0.1:8000/api/v1/orders/user/create/
+
+GET : http://127.0.0.1:8000/api/v1/orders/user/orders/
+
+
+======================================================================
+
+
+
+{
+  "username": "admin1",
+  "password": "AdminPass123!"
+}
+
+{
+  "username": "delivery1",
+  "password": "Delivery123!"
+}
+
+{
+  "username": "user1",
+  "password": "UserPass123!"
+}
+
+
+
+===================================
+
