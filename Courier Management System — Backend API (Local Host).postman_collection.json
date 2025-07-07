@@ -1,0 +1,1402 @@
+{
+	"info": {
+		"_postman_id": "35c8e37c-c04d-4b44-809a-2a6458d86b93",
+		"name": "Courier Management System — Backend API (Local Host)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40606912",
+		"_collection_link": "https://www.postman.com/aerospace-architect-76028991/my-workspace/collection/ep96hba/new-collection?action=share&source=collection_link&creator=40606912"
+	},
+	"item": [
+		{
+			"name": "Courier Management System — Backend API (Local Host)",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000/api/v1/auth/register/",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"username\": \"user2\",\r\n  \"email\": \"user2@example.com\",\r\n  \"password\": \"User2Pass123!\",\r\n    \"role\" : \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/auth/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/auth/register/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n  \"username\": \"user2\",\r\n  \"email\": \"user2@example.com\",\r\n  \"password\": \"User2Pass123!\",\r\n    \"role\" : \"user\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/auth/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:48:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "152"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statusCode\": 201,\n    \"message\": \"User registered successfully\",\n    \"data\": {\n        \"id\": 15,\n        \"username\": \"user2\",\n        \"email\": \"user2@example.com\",\n        \"role\": \"user\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/auth/login/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"shanto123\",\r\n  \"email\": \"shanto@example.com\",\r\n  \"password\": \"StrongPass190!\",\r\n  \"role\": \"user\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/auth/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/auth/login/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n  \"username\": \"user1\",\r\n  \"password\": \"UserPass123!\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/auth/login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:47:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "556"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statusCode\": 200,\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"access\": \"{{vault:json-web-token}}\",\n        \"refresh\": \"{{vault:json-web-token}}\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:authorization-secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"order_id\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"admin",
+								"assign",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"order_id\": 1\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"admin",
+										"assign",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:52:22 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "PUT, PATCH, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "18"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"delivery_man\": 3\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:authorization-secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"delivery_man\": 3\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"admin",
+								"assign",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"delivery_man\": 3\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"admin",
+										"assign",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:53:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "PUT, PATCH, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "266"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Delivery man assigned successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"description\": \"Parcel for client\",\n        \"delivery_address\": \"House 88, Banani, Dhaka\",\n        \"cost\": \"350.00\",\n        \"status\": \"delivered\",\n        \"is_paid\": false,\n        \"created_at\": \"2025-07-06T08:47:28.489418Z\",\n        \"user\": 2,\n        \"delivery_man\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:authorization-secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"delivery_man\": 3\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/delivery/orders/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"delivery",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"delivery_man\": 3\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/delivery/orders/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"delivery",
+										"orders",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:53:40 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "476"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"description\": \"Please deliver my package to Chittagong office.\",\n        \"delivery_address\": \"Road 45, Bashundhara R/A, Dhaka\",\n        \"cost\": \"150.00\",\n        \"status\": \"complete\",\n        \"is_paid\": true,\n        \"created_at\": \"2025-07-06T10:29:48.469949Z\",\n        \"user\": 4,\n        \"delivery_man\": 12\n    },\n    {\n        \"id\": 5,\n        \"description\": \"Deliver my books to Chittagong\",\n        \"delivery_address\": \"House 22, Road 7, Chittagong\",\n        \"cost\": \"250.00\",\n        \"status\": \"Complete\",\n        \"is_paid\": true,\n        \"created_at\": \"2025-07-06T16:38:36.864160Z\",\n        \"user\": 13,\n        \"delivery_man\": 12\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/api/v1/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/api/v1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"api",
+								"v1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/api/v1/",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/api/v1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"api",
+										"v1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:53:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "360"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"auth\": \"/api/v1/auth/\",\n    \"orders\": {\n        \"create\": \"/api/v1/orders/user/create/\",\n        \"myOrders\": \"/api/v1/orders/user/orders/\",\n        \"deliveryOrders\": \"/api/v1/orders/delivery/orders/\",\n        \"updateStatus\": \"/api/v1/orders/delivery/status/<int:pk>/\",\n        \"adminList\": \"/api/v1/orders/admin/orders/\",\n        \"assign\": \"/api/v1/orders/admin/assign/<int:pk>/\",\n        \"payment\": \"/api/v1/orders/payment/session/\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/delivery/orders/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:authorization-secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"delivered\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/delivery/orders/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"delivery",
+								"orders",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/delivery/orders/",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"delivered\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/delivery/orders/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"delivery",
+										"orders",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:55:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "476"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"description\": \"Please deliver my package to Chittagong office.\",\n        \"delivery_address\": \"Road 45, Bashundhara R/A, Dhaka\",\n        \"cost\": \"150.00\",\n        \"status\": \"complete\",\n        \"is_paid\": true,\n        \"created_at\": \"2025-07-06T10:29:48.469949Z\",\n        \"user\": 4,\n        \"delivery_man\": 12\n    },\n    {\n        \"id\": 5,\n        \"description\": \"Deliver my books to Chittagong\",\n        \"delivery_address\": \"House 22, Road 7, Chittagong\",\n        \"cost\": \"250.00\",\n        \"status\": \"Complete\",\n        \"is_paid\": true,\n        \"created_at\": \"2025-07-06T16:38:36.864160Z\",\n        \"user\": 13,\n        \"delivery_man\": 12\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:authorization-secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Parcel for client\",\r\n  \"delivery_address\": \"House 88, Banani, Dhaka\",\r\n  \"cost\": 350.00,\r\n  \"status\": \"delivered\",\r\n  \"delivery_man\": 3,\r\n  \"user\": 1,\r\n  \"is_paid\": false,\r\n  \"created_at\": \"2025-07-06T12:30:00Z\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/delivery/status/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"delivery",
+								"status",
+								"1",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"description\": \"Parcel for client\",\r\n  \"delivery_address\": \"House 88, Banani, Dhaka\",\r\n  \"cost\": 350.00,\r\n  \"status\": \"delivered\",\r\n  \"delivery_man\": 3,\r\n  \"user\": 1,\r\n  \"is_paid\": false,\r\n  \"created_at\": \"2025-07-06T12:30:00Z\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/delivery/status/1/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"delivery",
+										"status",
+										"1",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:55:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "PUT, PATCH, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "209"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"description\": \"Parcel for client\",\n    \"delivery_address\": \"House 88, Banani, Dhaka\",\n    \"cost\": \"350.00\",\n    \"status\": \"delivered\",\n    \"is_paid\": false,\n    \"created_at\": \"2025-07-06T08:47:28.489418Z\",\n    \"user\": 2,\n    \"delivery_man\": 3\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:authorization-secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Deliver my books to Chittagong\",\r\n  \"delivery_address\": \"House 22, Road 7, Chittagong\",\r\n  \"cost\": 250.00,\r\n  \"status\": \"Complete\",\r\n  \"delivery_man\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/delivery/status/5/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"delivery",
+								"status",
+								"5",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/admin/assign/1/",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"description\": \"Deliver my books to Chittagong\",\r\n  \"delivery_address\": \"House 22, Road 7, Chittagong\",\r\n  \"cost\": 250.00,\r\n  \"status\": \"Complete\",\r\n  \"delivery_man\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/delivery/status/5/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"delivery",
+										"status",
+										"5",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:39:09 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "PUT, PATCH, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "263"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Status updated\",\n    \"data\": {\n        \"id\": 5,\n        \"description\": \"Deliver my books to Chittagong\",\n        \"delivery_address\": \"House 22, Road 7, Chittagong\",\n        \"cost\": \"250.00\",\n        \"status\": \"Complete\",\n        \"is_paid\": true,\n        \"created_at\": \"2025-07-06T16:38:36.864160Z\",\n        \"user\": 13,\n        \"delivery_man\": 12\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/payment/session/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:authorization-secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"order_id\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/payment/session/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"payment",
+								"session",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/payment/session/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"order_id\": 1\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/payment/session/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"payment",
+										"session",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 20:58:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "380"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"checkout_url\": \"https://checkout.stripe.com/c/pay/cs_test_a1aiDpb4gMolDMjYWDs4vadSfmveLFp7jvD47wBJwjVq94RvGjHtm9nPQV#fidkdWxOYHwnPyd1blpxYHZxWjA0V21yQ2RAPXxSakxGMHZKQ1xybW5xSGp3QTNvQlZgaExrNGdGYUFWTFxUS25CaTAzMEpPf2Y2SHxXVGZIPW5UZGlBTmJQdVF%2FQEpyYW1vR1ZRan13YmtMNTV0aDdOck40MScpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/orders/user/create/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:authorization-secret}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"description\": \"Please deliver my package to Chittagong office.\",\r\n  \"delivery_address\": \"Road 45, Bashundhara R/A, Dhaka\",\r\n  \"cost\": 150.00\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/orders/user/create/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"user",
+								"create",
+								""
+							]
+						},
+						"description": "Courier Management API"
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/api/v1/orders/user/create/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 12,\r\n  \"description\": \"Deliver my books to Chittagong\",\r\n  \"delivery_address\": \"House 22, Road 7, Chittagong\",\r\n  \"cost\": 250.0,\r\n  \"status\": \"Pending\",\r\n  \"user\": \"testuser\",\r\n  \"delivery_man\": null,\r\n  \"is_paid\": false\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/orders/user/create/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"orders",
+										"user",
+										"create",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Jul 2025 21:10:48 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"description\": \"Deliver my books to Chittagong\",\n    \"delivery_address\": \"House 22, Road 7, Chittagong\",\n    \"cost\": \"250.00\",\n    \"status\": \"pending\",\n    \"is_paid\": false,\n    \"created_at\": \"2025-07-06T21:10:47.956293Z\",\n    \"user\": 13,\n    \"delivery_man\": null\n}"
+						}
+					]
+				}
+			],
+			"description": "This Postman collection provides endpoints for a role-based courier management system built with Django REST Framework. It supports Users, Delivery Men, and Admins to create, manage, and track courier orders with JWT authentication and Stripe payment integration."
+		}
+	]
+}
