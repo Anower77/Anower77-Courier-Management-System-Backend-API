@@ -32,7 +32,7 @@ A RESTful Django API for managing courier orders, deliverymen, and admins with s
 
 ## Live Links
 
-- **Live API** : [https://courier-management-system-backend-api-9bo8.onrender.com](https://courier-management-system-backend-api-9bo8.onrender.com)
+- **Live API** : [https://courier-management-system-backend-api-9bo8.onrender.com/](https://courier-management-system-backend-api-9bo8.onrender.com/)
 - **GitHub Repo** : [https://github.com/Anower77/Anower77-Courier-Management-System-Backend-API](https://github.com/Anower77/Anower77-Courier-Management-System-Backend-API)
 - **Postman Collection** : [Open in Postman](https://www.postman.com/aerospace-architect-76028991/workspace/my-workspace/folder/40606912-b732050d-5545-4be3-8a63-36aa9a1a91a6?action=share&creator=40606912&ctx=documentation&active-environment=40606912-d7ff6c1d-3e3e-4cdf-8831-030caad45f03)
 
