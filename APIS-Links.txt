@@ -15,25 +15,3 @@ GET : http://127.0.0.1:8000/api/v1/orders/user/orders/
 
 
 ======================================================================
-
-
-
-{
-  "username": "admin1",
-  "password": "AdminPass123!"
-}
-
-{
-  "username": "delivery1",
-  "password": "Delivery123!"
-}
-
-{
-  "username": "user1",
-  "password": "UserPass123!"
-}
-
-
-
-===================================
-
